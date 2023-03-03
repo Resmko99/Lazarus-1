@@ -1,0 +1,77 @@
+object Form1: TForm1
+  Left = 93
+  Height = 383
+  Top = 177
+  Width = 429
+  Caption = 'Form1'
+  ClientHeight = 383
+  ClientWidth = 429
+  DesignTimePPI = 120
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 20
+    Top = 224
+    Width = 43
+    Caption = 'Число'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 20
+    Top = 272
+    Width = 57
+    Caption = 'Степень'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 160
+    Height = 28
+    Top = 224
+    Width = 100
+    OnChange = Edit1Change
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 160
+    Height = 28
+    Top = 272
+    Width = 100
+    TabOrder = 1
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 190
+    Top = 10
+    Width = 388
+    Lines.Strings = (
+      'Memo1'
+    )
+    OnChange = Memo1Change
+    TabOrder = 2
+  end
+  object BitBtn1: TBitBtn
+    Left = 264
+    Height = 38
+    Top = 320
+    Width = 94
+    Cancel = True
+    Caption = 'Выход'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 3
+  end
+  object BitBtn2: TBitBtn
+    Left = 128
+    Height = 38
+    Top = 320
+    Width = 94
+    Caption = '&Возвести'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn2Click
+    TabOrder = 4
+  end
+end
